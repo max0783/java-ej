@@ -228,7 +228,7 @@ public class MyFirstJavaApp {
         mostrarMatriz(vector);
         vector = ej18(vector);
         mostrarMatriz(vector);
-        
+        */
         //EJ19 Matriz anti simetrica.
         int[][] matriz = llenarMatrizManual();
         
@@ -236,7 +236,7 @@ public class MyFirstJavaApp {
             System.out.println("Es antisimetrica");
         else
             System.out.println("No es antisimetrica.");
-        
+        /*
         //EJ 20 fucking matriz magica.
         int[][] matriz = llenarMatrizManual();
         if (esMatrizMagica(matriz))
