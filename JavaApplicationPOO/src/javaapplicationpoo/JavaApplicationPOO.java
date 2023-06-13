@@ -44,6 +44,7 @@ public class JavaApplicationPOO {
         Rectangulo nuevo = new Rectangulo ();
         nuevo.crearConDatosUsuario();
         nuevo.dibujarRectangulo();
+        System.out.println(nuevo.perimetro());
         
         
     }
