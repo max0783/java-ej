@@ -12,7 +12,10 @@ package javaapplicationpoo;
 //import Entity.Circunferencia;
 
 //ej4
-import Entity.Rectangulo;
+//import Entity.Rectangulo;
+
+//ejExtra1
+import extra.Vehiculo;
 
 /**
  *
@@ -40,13 +43,30 @@ public class JavaApplicationPOO {
         /*
         EJ 4
         
-        */
+        *//*
         Rectangulo nuevo = new Rectangulo ();
         nuevo.crearConDatosUsuario();
         nuevo.dibujarRectangulo();
         System.out.println(nuevo.perimetro());
+        */
+        Vehiculo autito = new Vehiculo();
+        
+       Vehiculo motito = new Vehiculo();
+        Vehiculo labici = new Vehiculo();
+        System.out.println("Los vehiculos se mueven as follows: (auto, moto bici)");
+        System.out.println(autito.moverseYfrenar(1));
+        System.out.println(motito.moverseYfrenar(1));
+        System.out.println(labici.moverseYfrenar(1));
+        System.out.println(autito.moverseYfrenar(5));
+        System.out.println(motito.moverseYfrenar(5));
+        System.out.println(labici.moverseYfrenar(5));
+        System.out.println(autito.moverseYfrenar(10));
+        System.out.println(motito.moverseYfrenar(10));
+        System.out.println(labici.moverseYfrenar(10));
+        System.out.println(autito.moverseYfrenar(60));
+        System.out.println(motito.moverseYfrenar(60));
+        System.out.println(labici.moverseYfrenar(60));
         
         
     }
-    
 }
