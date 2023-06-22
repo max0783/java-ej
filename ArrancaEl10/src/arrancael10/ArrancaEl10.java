@@ -5,7 +5,10 @@
  */
 package arrancael10;
 
-import clases.Matematica;
+//import clases.Matematica;
+
+import java.util.Date;
+
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
@@ -33,9 +36,9 @@ public class ArrancaEl10 {
         System.out.println("calcularPotencia da: " + nuevo.calcularPotencia());
         System.out.println("calcularRaiz da: " + nuevo.calcularRaiz());
         
-        System.out.println("Prueba de devolver mayor static " + Matematica.devolverMayor(1,2));*/
-        
-        /* EJERCICIO 12 creo que no necesitamos ayuda de nadie.
+        System.out.println("Prueba de devolver mayor static " + Matematica.devolverMayor(1,2));
+        */
+         //EJERCICIO 12 creo que no necesitamos ayuda de nadie.
         //No pregunten como lo hicimos
         
         String fecha1 = "2023-01-01";
@@ -53,6 +56,12 @@ public class ArrancaEl10 {
                 + periodo.getMonths() + " meses, y "
                 + periodo.getDays() + " días.");
 
+        /*
+        Date hoy = new Date ();
+        Date hace3dias = new Date ("2020/06/20");
+        
+        int anios = hoy.getYear() - hace3dias.getYear();
+        System.out.println("anios " + anios);
         */
     }
     
