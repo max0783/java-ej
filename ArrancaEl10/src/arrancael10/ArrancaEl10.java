@@ -7,6 +7,7 @@ package arrancael10;
 
 //import clases.Matematica;
 
+import clases.sumaEstatica;
 import java.util.Date;
 
 import java.time.LocalDate;
@@ -40,7 +41,7 @@ public class ArrancaEl10 {
         */
          //EJERCICIO 12 creo que no necesitamos ayuda de nadie.
         //No pregunten como lo hicimos
-        
+        /*
         String fecha1 = "2023-01-01";
         String fecha2 = "2023-06-21";
         
@@ -55,7 +56,8 @@ public class ArrancaEl10 {
                 + periodo.getYears() + " años, "
                 + periodo.getMonths() + " meses, y "
                 + periodo.getDays() + " días.");
-
+*/
+        
         /*
         Date hoy = new Date ();
         Date hace3dias = new Date ("2020/06/20");
@@ -63,6 +65,14 @@ public class ArrancaEl10 {
         int anios = hoy.getYear() - hace3dias.getYear();
         System.out.println("anios " + anios);
         */
+        
+        //INSTANCIO UNA VEZ LA SUMA ESTATICA
+        sumaEstatica nueva = new sumaEstatica(1,2);
+        //LLAMO A LA FUNCION DESDE SU INSTANCIA (NUEVA)
+        System.out.println("la suma es " + nueva.sumarSoloInstanciada());
+        //LLAMO A LA FUNCION DESDE SU OBJETO (SIN LLAMAR A NUEVA) Y LE MANDO SUS VALORES.
+        System.out.println("Suma sin instanciar de 3 y 4 es " + sumaEstatica.sumarSinInstanciar(3, 4));
+        
     }
     
 }
