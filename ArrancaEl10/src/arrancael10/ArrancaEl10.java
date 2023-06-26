@@ -7,6 +7,7 @@ package arrancael10;
 
 //import clases.Matematica;
 
+import clases.Movil;
 import clases.sumaEstatica;
 import java.util.Date;
 
@@ -65,14 +66,19 @@ public class ArrancaEl10 {
         int anios = hoy.getYear() - hace3dias.getYear();
         System.out.println("anios " + anios);
         */
-        
+        /*
         //INSTANCIO UNA VEZ LA SUMA ESTATICA
         sumaEstatica nueva = new sumaEstatica(1,2);
         //LLAMO A LA FUNCION DESDE SU INSTANCIA (NUEVA)
         System.out.println("la suma es " + nueva.sumarSoloInstanciada());
         //LLAMO A LA FUNCION DESDE SU OBJETO (SIN LLAMAR A NUEVA) Y LE MANDO SUS VALORES.
-        System.out.println("Suma sin instanciar de 3 y 4 es " + sumaEstatica.sumarSinInstanciar(3, 4));
+        System.out.println("Suma sin instanciar de 3 y 4 es " + sumaEstatica.sumarSinInstanciar(3, 4));*/
         
-    }
+        Movil nuevo = new Movil ();
+        nuevo.cargarCelular();
+        nuevo.ingresarCodigo();
+        System.out.println(nuevo.toString());
+        
+            }
     
 }
