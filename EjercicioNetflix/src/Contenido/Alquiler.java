@@ -15,7 +15,7 @@ public class Alquiler {
     Pelicula peliculaAlquilada;
     Date fechaInicio;
     Date fechaFin;
-    int precio;
+    double precio;
 
     public Alquiler(Pelicula peliculaAlquilada, Date fechaInicio, Date fechaFin, int precio) {
         this.peliculaAlquilada = peliculaAlquilada;
