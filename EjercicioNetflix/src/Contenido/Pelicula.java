@@ -57,7 +57,7 @@ public class Pelicula {
         this.duracion = duracion;
     }
     
-        public String toString() {
+    public String toString() {
         return "Pelicula{" +
                 "titulo='" + titulo + '\'' + ", genero='" + genero + '\'' + ", anio=" + anio + ", duracion=" + duracion + '}';
     }
