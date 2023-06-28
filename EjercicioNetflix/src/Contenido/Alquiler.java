@@ -51,7 +51,7 @@ public class Alquiler {
         this.fechaFin = fechaFin;
     }
 
-    public int getPrecio() {
+    public double getPrecio() {
         return precio;
     }
 
