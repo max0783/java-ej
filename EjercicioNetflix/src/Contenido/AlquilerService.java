@@ -40,5 +40,35 @@ public class AlquilerService {
 
         return new Alquiler(peliculaAlquilada, fechaInicio, fechaFin, precio);
     }
+    
+    public void calcularTotalServicio(Alquiler[] alquileres) {
+        double totalAlquileres = 0;
+        double precioS;
+        int diaI, diaF, recD;
+
+        for (int i = 0; i < alquileres.length; i++) {
+            diaF = alquileres[i].getFechaFin().getDay();
+            diaI = alquileres[i].getFechaInicio().getDay();
+            precioS = (double) alquileres[i].getPrecio();
+
+            if ((diaF - diaI) > 3) {
+                recD = diaF - diaI - 3;
+                totalAlquileres += precioS * 3 + (precioS * 1.1 * recD);
+            } else {
+                totalAlquileres += precioS * (diaF - diaI);
+            }
+
+        }
+
+        System.out.println("El total del servicio de alquileres fue de: $ " + totalAlquileres);
+    }
+        public void mostrarAlquileres(Alquiler[] alquis) {
+        for (int i = 0; i < alquis.length; i++) {
+            System.out.println("Datos del alquiler " + (i + 1));
+            alquis[i].toString();
+            System.out.println("");
+        }
+    }
+
 
 }

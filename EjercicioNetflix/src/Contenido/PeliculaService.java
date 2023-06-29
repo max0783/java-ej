@@ -58,12 +58,11 @@ public class PeliculaService {
         return peliculas;
     }
     
-     public String [] mostrarPeliculas(Pelicula [] setDePelis){
-         String [] nombreDePelis = new String [setDePelis.length];
+     public void mostrarPeliculas(Pelicula [] setDePelis){
          for (int i = 0; i<setDePelis.length; i++){
-             nombreDePelis[i] = mostrarPelicula(setDePelis[i]);
+             System.out.println(mostrarPelicula(setDePelis[i]));
          }
-         return nombreDePelis;
+         
      }
      
      public String mostrarPelicula(Pelicula unica){
