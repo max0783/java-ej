@@ -6,7 +6,8 @@
 package javaextragym;
 
 
-import javaextragym.Sources.Services.RutinaService;
+import javaextragym.Sources.Classes.Rutina;
+import javaextragym.Sources.Services.*;
 
 /**
  *
@@ -19,8 +20,10 @@ public class JavaExtraGYM {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-    }
     RutinaService todasLasRutinas = new RutinaService();
-    todasLasRutinas.
+    todasLasRutinas.crearRutina(new Rutina());
+    
            
+    }
+
 }
