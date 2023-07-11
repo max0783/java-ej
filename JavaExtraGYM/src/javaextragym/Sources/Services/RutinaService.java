@@ -42,23 +42,27 @@ public class RutinaService {
         return this.rutinarias;
     }
     
-    public void actualizarRutina (int id, String nombre,int duracion,String nivelDificultad,String descripcion){
+    public int actualizarRutina (int id, String nombre,int duracion,String nivelDificultad,String descripcion){
         for (Rutina rut : this.rutinarias){
             if (rut.getId() == id){
                 rut.setNombre(nombre);
                 rut.setDuracion(duracion);
                 rut.setNivelDificultad(nivelDificultad);
                 rut.setDescripcion(descripcion);
+                return 1;
             }
         }
+        return 0;
     }
     
-    public void eliminarRutina(int id){
+    public int eliminarRutina(int id){
         for (Rutina rut : this.rutinarias){
             if (rut.getId() == id){
                 this.rutinarias.remove(rut);
+                return 1;
             }
         }
+        return 0;
     }
     
     
