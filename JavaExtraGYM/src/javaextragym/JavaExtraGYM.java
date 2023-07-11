@@ -5,6 +5,9 @@
  */
 package javaextragym;
 
+
+import javaextragym.Sources.Services.RutinaService;
+
 /**
  *
  * @author max72
@@ -17,5 +20,7 @@ public class JavaExtraGYM {
     public static void main(String[] args) {
         // TODO code application logic here
     }
-    
+    RutinaService todasLasRutinas = new RutinaService();
+    todasLasRutinas.
+           
 }

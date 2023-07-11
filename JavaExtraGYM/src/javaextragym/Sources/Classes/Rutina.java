@@ -27,6 +27,11 @@ public class Rutina {
         this.descripcion = descripcion;
     }
 
+    @Override
+    public String toString() {
+        return "Rutina{" + "id=" + id + ", nombre=" + nombre + ", duracion=" + duracion + ", nivelDificultad=" + nivelDificultad + ", descripcion=" + descripcion + '}';
+    }
+
     public int getId() {
         return id;
     }
