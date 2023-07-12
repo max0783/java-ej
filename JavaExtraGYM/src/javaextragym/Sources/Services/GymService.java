@@ -13,10 +13,10 @@ import javaextragym.Sources.Classes.GymClass;
  * @author max72
  */
 public class GymService {
-    ArrayList <GymClass> clientes;
+    ArrayList <GymClass> todosLosGimnastas;
 
     public GymService(ArrayList<GymClass> clientes) {
-        this.clientes = clientes;
+        this.todosLosGimnastas = clientes;
     }
 
     public void addClient (){

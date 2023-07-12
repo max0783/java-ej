@@ -36,9 +36,6 @@ public class GymClass {
         this.rutina = rutina;
     }
     
-    public void addRutina(Rutina rutina){
-        //agregar
-    }
 
     @Override
     public String toString() {
